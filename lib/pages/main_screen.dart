@@ -5,21 +5,33 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('First App'),
-      ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text(
-              'Hello World!',
-            ),
-            Text(
-              'It\'s time to learn Flutter!',
-            ),
+    return Scaffold(body: GradientContainer());
+  }
+}
+
+class GradientContainer extends StatelessWidget {
+  // GradientContainer({key}) : ;
+
+  @override
+  Widget build(context) {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color(0xff9a9a9a),
+            Color(0xffe9e9e9),
           ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+      ),
+      child: const Center(
+        child: Text(
+          'Hello World!',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
         ),
       ),
     );
