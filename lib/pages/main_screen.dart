@@ -10,7 +10,7 @@ class MainScreen extends StatelessWidget {
 }
 
 class GradientContainer extends StatelessWidget {
-  // GradientContainer({key}) : ;
+  const GradientContainer({super.key});
 
   @override
   Widget build(context) {
