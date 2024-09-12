@@ -30,7 +30,7 @@ class GradientContainer extends StatelessWidget {
           'Hello World!',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 20,
+            fontSize: 28,
           ),
         ),
       ),
