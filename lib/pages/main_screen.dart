@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
+  void rollDice() {
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +35,9 @@ class MainScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    // ..
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.yellow[100],
                     foregroundColor: Colors.grey[900],
